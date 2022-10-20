@@ -114,17 +114,6 @@ li a:hover:after {
   opacity: 0.7;
 }
 
-
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: transparent;
-}
-
 .header__logo-box {
   position: absolute;
   top: 4rem;

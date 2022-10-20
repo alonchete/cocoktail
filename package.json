@@ -1,15 +1,15 @@
 {
-    "name": "natours",
-    "version": "1.0.0",
-    "main": "index.js",
-    "author": "Javier Pérez <surtich@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-      "compile:sass": "node-sass --watch main.scss style.css"
-    },
-    "dependencies": {},
-    "devDependencies": {
-      "node-sass": "^4.14.1"
-    }
-  }
-  
+  "name": "al",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Javier Pérez <surtich@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass --watch main.scss style.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "repository": "https://github.com/alonchete/cocoktail.git"
+}

@@ -1,45 +1,76 @@
+.header_info {
+  width: 100%;
+  height: 5rem;
+  background-image: linear-gradient(to left top, #e7cccc, $colorPrincipal);
 
-.cabecera {
-
-    width: 100%;
+  .menu_items {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); /* relative to itself */
     height: 5rem;
-    background-image: linear-gradient(to  left top, #e7cccc , $colorPrincipal);
+    display: flex;
+  }
 
-    ul{
-        overflow: hidden;
-        position:absolute;
-        left: 50%;
-        transform: translate(-50%); /* relative to itself */
-        height: 5rem;
-        display: flex;
+  .menu__item {
+    font-family: $fuentePrincipal;
+    list-style: none;
+    float: left;
+    height: 5rem;
+  }
 
+  .menu__item {
+    a {
+      margin: 100px 40px;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      display: block;
+      font-family: $fuentePrincipal;
+      text-decoration: none;
+    }
+  }
 
+  .menu__item--logo {
+    background-color: $colorSecundario;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: transparent;
+
+  .header_primary {
+    
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    
+    .heading-primary--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 3.5rem;
+      background-image: $colorFuente;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
     }
 
-    li {
-
-        font-family: $fuentePrincipal;
-        list-style: none;
-        float: left;
-        height: 5rem;
-
-
+    .heading-primary--sub {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 1.75rem;
+      background-image: $colorFuente;
+      -webkit-background-clip: text;
+      color: transparent;
     }
-
-    li a {
-        padding: 1rem 1.5rem;
-        text-align: center;
-        display: block;
-        font-family: $fuentePrincipal;
-        text-decoration: none;
-    }
-
-    .logo{
-        background-color: $colorSecundario;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 2rem 1.5rem;
-
-    }
-
+  }
 }
