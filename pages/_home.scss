@@ -1,12 +1,14 @@
 .header_info {
-  background-image: linear-gradient(to right, $colorSecundario, transparent),url("img/img1.jpg");
+  background-image: linear-gradient(0.25turn, #225b6398, transparent, #225b6398) ,url("img/img1.jpg");
   width: 100%;
   height: 95vh;
   background-size: cover;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  opacity: 0.75; /* para que la imagen se ve mas guay */
+  opacity: 0.80; /* para que la imagen se ve mas guay */
+
+  
 
   .menu_items {
     width: 100%;
@@ -38,7 +40,7 @@
         font-size: 32px;
         display: block;
         text-decoration: none;
-        background-image: linear-gradient(to right, #feffbb, #1f302a);
+        background-image: linear-gradient(to left top, $colorSecundario, #6b6d18);
         -webkit-background-clip: text;
         color: transparent;
         position: relative;
@@ -52,30 +54,52 @@
   }
 
   .menu__item--logo {
-    color: rgb(0, 0, 0);
+    color: transparent;
+    background-image: linear-gradient(to right, #79794d, #a5a210);
+    -webkit-background-clip: text;
     text-align: center;
     padding: 2rem 1.5rem;
   }
 }
 
+.rombo{
+  position: absolute;
+  top: $margenSuperior - 10%;
+  left: 50%;
+  height:42rem;
+  width: 82rem;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right, #747447, #7c7a12);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+
+
+
 .header__text-box {
   position: absolute;
-  top: 40%;
+  top: $margenSuperior;
   left: 50%;
+  height: 40rem;
   transform: translate(-50%, -50%);
   text-align: center;
   color: transparent;
 
+
   .heading-primary {
+    
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
     .heading-primary--main {
       display: block;
       font-size: 6rem;
       font-weight: 700;
       letter-spacing: 3.5rem;
-      background-image: linear-gradient(to right, #2b717a, #095a31);
+      background-image: linear-gradient(0.25turn, #5e9aa1, #90b6bb,  #5e9aa1  );
       -webkit-background-clip: text;
       color: transparent;
       margin-bottom: 1rem;
@@ -84,11 +108,12 @@
     .heading-primary--sub {
       display: block;
       font-size: 2.5rem;
-      font-weight: 500;
-      letter-spacing: 1.75rem;
-      background-image: linear-gradient(to right, #2b717a, #095a31);
+      font-weight: 600;
+      letter-spacing: 1.5rem;
+      background-image: linear-gradient(0.25turn, #5e9aa1, #90b6bb,  #5e9aa1  );
       -webkit-background-clip: text;
       color: transparent;
     }
+    
   }
 }
