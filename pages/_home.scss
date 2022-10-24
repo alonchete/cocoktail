@@ -1,5 +1,5 @@
 .header_info {
-  background-image: linear-gradient(1turn, transparent, #19484eb2, transparent) ,url("img/img1.jpg");
+  background-image: linear-gradient(1turn, transparent, #000000cb, transparent) ,url("img/img1.jpg");
   width: 100%;
   height: 95vh;
   background-size: cover;
@@ -12,7 +12,7 @@
 
   .menu_items {
     width: 100%;
-    height: 5rem;
+    height: 10rem;
     font-size: 24px !important;
     text-align: center;
     font-weight: 600;
@@ -20,6 +20,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     margin-bottom: 10rem;
+    background-color: rgb(255, 255, 255);
+
     ul {
       overflow: hidden;
       position: absolute;
@@ -34,10 +36,10 @@
       list-style: none;
       float: left;
       height: 5rem;
-      margin: 1rem 5rem;
+      margin: 1rem 6rem;
       a {
         padding: 1rem 1.5rem;
-        font-size: 32px;
+        font-size: 50px;
         display: block;
         text-decoration: none;
         background-image: linear-gradient(to left top, $colorSecundario, #6b6d18);
@@ -95,7 +97,7 @@
       font-size: 6.5rem;
       font-weight: 500;
       letter-spacing: 1rem;
-      background-image: linear-gradient(0.25turn, #f5f5f5, #f5f5f5,  #f5f5f5  );
+      background-image: linear-gradient(0.25turn, #f5f5f5, #c7c7c7,  #f5f5f5  );
       -webkit-background-clip: text;
       color: transparent;
       margin-bottom: 1rem;
@@ -106,7 +108,7 @@
       font-size: 2.5rem;
       font-weight: 1300;
       letter-spacing: 1.5rem;
-      background-image: linear-gradient(0.25turn, #f1f1f1, #f5f5f5,  #f1f1f1  );
+      background-image: linear-gradient(0.25turn, #f1f1f1, #c7c7c7,  #f1f1f1  );
       -webkit-background-clip: text;
       color: transparent;
     }
