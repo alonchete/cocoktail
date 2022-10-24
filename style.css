@@ -45,7 +45,7 @@ li a:hover:after {
 }
 
 .header_info {
-  background-image: linear-gradient(1turn, transparent, rgba(25, 72, 78, 0.5960784314), transparent), url("img/img1.jpg");
+  background-image: linear-gradient(1turn, transparent, rgba(25, 72, 78, 0.6980392157), transparent), url("img/img1.jpg");
   width: 100%;
   height: 95vh;
   background-size: cover;
@@ -104,7 +104,7 @@ li a:hover:after {
 .rombo {
   position: absolute;
   top: 43%;
-  left: 49%;
+  left: 50%;
   height: 35rem;
   width: 70rem;
   transform: translate(-50%, -50%);
