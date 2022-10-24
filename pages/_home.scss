@@ -1,5 +1,5 @@
 .header_info {
-  background-image: linear-gradient(0.25turn, #225b6398, transparent, #225b6398) ,url("img/img1.jpg");
+  background-image: linear-gradient(1turn, transparent, #19484e98, transparent) ,url("img/img1.jpg");
   width: 100%;
   height: 95vh;
   background-size: cover;
@@ -64,10 +64,10 @@
 
 .rombo{
   position: absolute;
-  top: $margenSuperior - 10%;
-  left: 50%;
-  height:42rem;
-  width: 82rem;
+  top: $margenSuperior - 7%;
+  left: 49%;
+  height: 35rem;
+  width: 70rem;
   transform: translate(-50%, -50%);
   background-image: linear-gradient(to right, #747447, #7c7a12);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -77,29 +77,25 @@
 
 
 .header__text-box {
-  position: absolute;
-  top: $margenSuperior;
-  left: 50%;
-  height: 40rem;
-  transform: translate(-50%, -50%);
-  text-align: center;
   color: transparent;
-
-
   .heading-primary {
     
     color: #fff;
     text-transform: uppercase;
-    backface-visibility: hidden;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    backface-visibility: hidden;  
+    position: absolute;
+    top: $margenSuperior;
+    left: 50%;
+    height: 40rem;
+    transform: translate(-50%, -50%);
+    text-align: center;  
 
     .heading-primary--main {
       display: block;
-      font-size: 6rem;
-      font-weight: 700;
-      letter-spacing: 3.5rem;
-      background-image: linear-gradient(0.25turn, #5e9aa1, #90b6bb,  #5e9aa1  );
+      font-size: 6.5rem;
+      font-weight: 500;
+      letter-spacing: 1rem;
+      background-image: linear-gradient(0.25turn, #f5f5f5, #f5f5f5,  #f5f5f5  );
       -webkit-background-clip: text;
       color: transparent;
       margin-bottom: 1rem;
@@ -108,9 +104,9 @@
     .heading-primary--sub {
       display: block;
       font-size: 2.5rem;
-      font-weight: 600;
+      font-weight: 1300;
       letter-spacing: 1.5rem;
-      background-image: linear-gradient(0.25turn, #5e9aa1, #90b6bb,  #5e9aa1  );
+      background-image: linear-gradient(0.25turn, #f1f1f1, #f5f5f5,  #f1f1f1  );
       -webkit-background-clip: text;
       color: transparent;
     }
