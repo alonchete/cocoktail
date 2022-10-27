@@ -51,7 +51,6 @@
         @include respond(tab-port) {
             margin: 1rem 3rem;
         }
-
         @include respond(phone) {
             margin: .5rem 1rem;
         }
@@ -75,7 +74,7 @@
 
             display: inline-block;
             text-decoration: none;
-          background-image: linear-gradient(to left top, $colorSecundario, #6b6d18);
+          background-image: linear-gradient(to left top, $color-gold1, $color-gold2);
           -webkit-background-clip: text;
           color: transparent;
           position: relative;
