@@ -146,22 +146,24 @@ video {
     mix-blend-mode: multiply; }
     .pie-pagina .grupo1 .social:hover a {
       filter: blur(2px); }
-    .pie-pagina .grupo1 .box figure {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .pie-pagina .grupo1 .box img {
-      width: 250px;
-      border-radius: 150px; }
-    .pie-pagina .grupo1 .box h2 {
-      color: #0a1a2a;
-      margin-bottom: 25px;
-      font-size: 20px; }
-    .pie-pagina .grupo1 .box p {
-      color: #0a1a2a;
-      margin-bottom: 10px; }
+    .pie-pagina .grupo1 .box {
+      margin: auto; }
+      .pie-pagina .grupo1 .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .pie-pagina .grupo1 .box img {
+        width: 250px;
+        border-radius: 150px; }
+      .pie-pagina .grupo1 .box h2 {
+        color: #0a1a2a;
+        margin-bottom: 25px;
+        font-size: 20px; }
+      .pie-pagina .grupo1 .box p {
+        color: #0a1a2a;
+        margin-bottom: 10px; }
     .pie-pagina .grupo1 .social a:hover {
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
