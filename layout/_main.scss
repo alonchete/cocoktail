@@ -9,10 +9,8 @@
 }
 
 .heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
+
     backface-visibility: hidden; // Trick to fix the little shaking when the animation ends 
-    justify-content: center;
 
     &--main {
         display: block;
