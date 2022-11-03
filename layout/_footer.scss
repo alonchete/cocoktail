@@ -43,7 +43,7 @@
       padding: 45px 0;/*arriba lados*/
       mix-blend-mode: multiply;
 
-        .social:hover a{//borroso todo
+        .social:hover a{//borroso
           filter:blur(2px);
         }
         .box{
@@ -77,7 +77,7 @@
         a:hover{
           transform: translateY(-3px) scale(1.05);
           box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
-          grid-template-columns: repeat(3, 1fr);//quirate solo a el lo borroso
+          filter: none;//para que quite lo borroso solo en uno
           color: white;
   
         }
