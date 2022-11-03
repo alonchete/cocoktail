@@ -1,7 +1,7 @@
 .section-intro {
     
     position: relative;
-    padding: 10rem 0;
+    padding: 15rem 0;
     margin-top: -10vh; // 95vh-75vh=20vh to cover the header triangle
 
     @include respond(tab-port) {
@@ -60,7 +60,7 @@
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-grey-light-2, $color-white); // background-color can not use gradients
+    background-image: $colorFuente; // background-color can not use gradients
     -webkit-background-clip: text; // clip background to the text
     color: transparent; // hide the text to show the backgroup clipped
     letter-spacing: 2px; // using px instead rem

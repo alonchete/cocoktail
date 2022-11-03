@@ -38,7 +38,7 @@
 
 
 .col-1-of-2 h3{
-    background-image: linear-gradient(to right, $color-white, $color-grey-light-2);
+    background-image:$colorFuente;
     -webkit-background-clip: text;
     color: transparent;
     position: relative;
