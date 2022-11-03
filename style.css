@@ -434,7 +434,7 @@ video {
     .pie-pagina .grupo1 .social a:hover {
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-      filter: none;
+      grid-template-columns: repeat(3, 1fr);
       color: white; }
     .pie-pagina .grupo1 .social a {
       display: inline-block;
