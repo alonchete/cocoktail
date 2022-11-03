@@ -412,7 +412,8 @@ video {
     .pie-pagina .grupo1 .social:hover a {
       filter: blur(2px); }
     .pie-pagina .grupo1 .box {
-      margin: auto; }
+      margin: auto;
+      margin-top: 0; }
       .pie-pagina .grupo1 .box figure {
         width: 100%;
         height: 100%;
