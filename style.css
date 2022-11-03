@@ -393,7 +393,6 @@ video {
     grid-template-columns: repeat(3, 1fr);
     /*3-que se repita 3 veces(las 3 columnas)
       1fr-que ocupe todo el ancho, las 3 columnas*/
-    grid-gap: 50px;
     padding: 45px 0;
     /*arriba lados*/
     mix-blend-mode: multiply; }
@@ -413,7 +412,8 @@ video {
       .pie-pagina .grupo1 .box h2 {
         color: #0a1a2a;
         margin-bottom: 25px;
-        font-size: 3.2rem; }
+        font-size: 3.2rem;
+        text-align: center; }
       .pie-pagina .grupo1 .box p {
         color: #0a1a2a;
         margin-bottom: 10px;
