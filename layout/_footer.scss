@@ -43,9 +43,10 @@
       grid-gap: 50px;
       padding: 45px 0;/*arriba lados*/
       mix-blend-mode: multiply;
-      .social:hover a{
-        filter:blur(2px);
-      }
+
+        .social:hover a{
+          filter:blur(2px);
+        }
         .box{
           margin: auto;
               figure{
@@ -63,13 +64,14 @@
                 h2{
                   color :#0a1a2a;
                   margin-bottom: 25px;
-                  font-size: 20px;
+                  font-size: 3.2rem;
                 }
                 p{
                   color:#0a1a2a;
                   margin-bottom: 10px;
+                  font-size: 1.5rem;
                 }
-      }
+        }
       .social{
         a:hover{
           transform: translateY(-3px) scale(1.05);
@@ -81,15 +83,15 @@
         a{
           display: inline-block;
           text-decoration: none;/*la linea de subrallado por defecto desaparece*/
-          width: 45px;
-          height: 45px;
-          line-height: 45px;
+          width: 6rem;
+          height: 6rem;
+          line-height: 6rem;
           color:white;
           margin-right: 10px;
           background-color: #0a1a2a;
           text-align: center;
           transition: all 300ms ;/*all:para todos 300ms:tiempo ease:efecto*/
-          font-size: 18px;
+          font-size: 3rem;
           box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
         }
         .facebook:hover{
