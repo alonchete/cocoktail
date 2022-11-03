@@ -1,8 +1,8 @@
 .section-intro {
     
     position: relative;
-    padding: 15rem 0;
-    margin-top: -15vh; // 95vh-75vh=20vh to cover the header triangle
+    padding: 10rem 0;
+    margin-top: -10vh; // 95vh-75vh=20vh to cover the header triangle
 
     @include respond(tab-port) {
         padding: 20rem 0;
@@ -92,7 +92,3 @@
     }
 }
 
-main{
-    background-image: linear-gradient( 1turn, $color-gold1,$color-gold2,$color-gold3);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-}
