@@ -1,0 +1,17 @@
+{
+  "name": "al",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Javier Pérez <surtich@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass --watch main.scss style.css"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "repository": "https://github.com/alonchete/cocoktail.git"
+}
