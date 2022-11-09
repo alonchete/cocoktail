@@ -49,6 +49,7 @@
 
 //Animación de imagenes
 .col-1-of-2 img{
+    height: 25rem;
     border-radius: .5rem;
     &:hover {
     outline: 1.5rem solid $colorFuente;

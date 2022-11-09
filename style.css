@@ -361,6 +361,7 @@ body {
   align-items: center; }
 
 .col-1-of-2 img {
+  height: 25rem;
   border-radius: .5rem; }
   .col-1-of-2 img:hover {
     outline: 1.5rem solid linear-gradient(to right, #2b717a, #095a31);
@@ -491,13 +492,13 @@ video {
   .todaslascategoriastitulo {
     width: 100%;
     height: 100%;
-    padding-top: 50px; }
+    padding-top: 60px; }
   .todaslascategorias h2 {
     width: 100%;
     color: white;
     font-size: 80px;
     text-align: center;
-    transform: rotate(-5deg) skewX(-5deg);
+    transform: rotate(-3deg) skewX(-3deg);
     text-transform: uppercase; }
 
 .categorias {
