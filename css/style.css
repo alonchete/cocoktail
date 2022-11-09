@@ -107,31 +107,6 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-.feature-box {
-  width: 20rem;
-  height: 20rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #2b717a, #095a31);
-    -webkit-background-clip: text;
-    color: transparent; }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
-
-.section-features {
-  padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(43, 113, 122, 0.8), rgba(9, 90, 49, 0.8)), url("../img/nat-4.jpg");
-  background-size: cover; }
-
 .header_info {
   background-image: linear-gradient(1turn, transparent, #000000ad, transparent), url("img/img1.jpg");
   width: 100%;
@@ -390,8 +365,8 @@ body {
   .col-1-of-2 img:hover {
     outline: 1.5rem solid linear-gradient(to right, #2b717a, #095a31);
     transform: scale(1.05) translateY(-0.5rem);
-    box-shadow: 0 2.5rem 4rem #747447;
-    z-index: 30;
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
     transition: all .2s;
     border-radius: 1rem; }
   .col-1-of-2 img:hover .col-1-of-2 img__photo:not(:hover) {
@@ -456,8 +431,6 @@ video {
         margin-bottom: 10px;
         font-size: 1.5rem;
         font-weight: bold; }
-    .pie-pagina .grupo1 .social:hover a {
-      filter: blur(2px); }
     .pie-pagina .grupo1 .social a:hover {
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
@@ -524,7 +497,7 @@ video {
     color: white;
     font-size: 80px;
     text-align: center;
-    transform: rotate(-3deg) skewX(-3deg);
+    transform: rotate(-5deg) skewX(-5deg);
     text-transform: uppercase; }
 
 .categorias {
@@ -641,15 +614,15 @@ video {
     .categoria--overlay h3 {
       width: 100%;
       color: white;
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
       transform: rotate(-5deg) skewX(-5deg);
       text-transform: uppercase;
-      margin-top: 10%; }
+      margin-top: 15%; }
     .categoria--overlay p {
       width: 90%;
       color: white;
-      font-size: 20px;
+      font-size: 28px;
       text-align: center;
       transform: rotate(-5deg) skewX(-5deg);
       line-height: 30px;
@@ -676,89 +649,144 @@ video {
         margin-top: 8%;
         text-decoration: none; }
 
-.form {
+.todalacarta {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("img/img11.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  /*
-    margin: 0;
-    padding: 0;
-    background-image: url("img11.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: darkslategray; }
+  .todalacartatitulo {
     width: 100%;
     height: 100%;
-    padding: 20px 100px;
-    display: flex;
-   */ }
-  .form .contact {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    position: relative; }
-    .form .contact__map {
+    padding-top: 50px; }
+  .todalacarta h2 {
+    width: 100%;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    transform: rotate(-5deg) skewX(-5deg);
+    text-transform: uppercase; }
+
+.cocteles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: darkslategray;
+  display: flex;
+  flex-wrap: wrap;
+  /*wrap-reverse*/
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  max-width: 114rem;
+  margin: 0 auto; }
+  .cocteles:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cocteles:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .cocteles {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .cocteles:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .cocteles .col-1-of-1 {
+    width: calc-col-width(1, 1); }
+  .cocteles .col-1-of-2 {
+    width: calc-col-width(1, 2); }
+  .cocteles .col-1-of-3 {
+    width: calc-col-width(1, 3); }
+  .cocteles .col-1-of-4 {
+    width: calc-col-width(1, 4); }
+  .cocteles .col-1-of-5 {
+    width: calc-col-width(1, 5); }
+  .cocteles .col-1-of-6 {
+    width: calc-col-width(1, 6); }
+  .cocteles .col-2-of-3 {
+    width: calc-col-width(2, 3); }
+  .cocteles .col-2-of-4 {
+    width: calc-col-width(2, 4); }
+  .cocteles .col-2-of-5 {
+    width: calc-col-width(2, 5); }
+  .cocteles .col-2-of-6 {
+    width: calc-col-width(2, 6); }
+  .cocteles .col-3-of-4 {
+    width: calc-col-width(3, 4); }
+  .cocteles .col-3-of-5 {
+    width: calc-col-width(3, 5); }
+  .cocteles .col-3-of-6 {
+    width: calc-col-width(3, 6); }
+  .cocteles .col-4-of-5 {
+    width: calc-col-width(4, 5); }
+  .cocteles .col-4-of-6 {
+    width: calc-col-width(4, 6); }
+  .cocteles .col-5-of-6 {
+    width: calc-col-width(5, 6); }
+  .cocteles [class^="col-"] {
+    float: left; }
+    .cocteles [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .cocteles [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .cocteles [class^="col-"] {
+        width: 100% !important; } }
+
+.coctel {
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column; }
+  .coctel--main_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    display: block; }
+    .coctel--main_content img {
+      height: 100%; }
+  .coctel--overlay {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: darkslategray;
+    opacity: 0.8;
+    overflow: hidden;
+    transition: .4s ease;
+    justify-content: center; }
+    .coctel--overlay h3 {
       width: 100%;
-      height: auto;
-      flex: 50%; }
-      .form .contact__map iframe {
-        width: 100%;
-        height: 100%;
-        border-radius: 50px; }
-    .form .contact__form {
-      width: 100%;
-      height: auto;
-      flex: 50%;
+      color: white;
+      font-size: 40px;
       text-align: center;
-      padding: 30px; }
-      .form .contact__form h3 {
-        margin-bottom: 10px;
-        text-transform: uppercase; }
-      .form .contact__form--txt {
-        width: 100%;
-        height: 40px;
-        color: black;
-        border: 1px solid aquamarine;
-        border-radius: 50px;
-        outline: none;
-        margin-bottom: 20px;
-        padding: 15px; }
-      .form .contact__form--txtarea {
-        width: 100%;
-        height: 140px;
-        color: black;
-        border: 1px solid aquamarine;
-        border-radius: 50px;
-        outline: none;
-        margin-bottom: 20px;
-        padding: 15px;
-        resize: none; }
-      .form .contact__form--txt::placeholder {
-        color: aquamarine; }
-      .form .contact__form--txtarea::placeholder {
-        color: aquamarine; }
-      .form .contact__form--btn {
-        width: 100%;
-        border: none;
-        border-radius: 50px;
-        background-color: aquamarine;
-        padding: 15px 0;
-        font-size: 18px;
-        cursor: pointer;
-        text-transform: uppercase; }
+      transform: rotate(-5deg) skewX(-5deg);
+      text-transform: uppercase;
+      margin-top: 15%; }
+    .coctel--overlay p {
+      width: 90%;
+      color: white;
+      font-size: 28px;
+      text-align: center;
+      transform: rotate(-5deg) skewX(-5deg);
+      line-height: 30px;
+      margin: auto;
+      margin-top: 8%; }
+    .coctel--overlay a {
+      text-decoration: none; }
