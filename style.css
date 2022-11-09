@@ -365,8 +365,8 @@ body {
   .col-1-of-2 img:hover {
     outline: 1.5rem solid linear-gradient(to right, #2b717a, #095a31);
     transform: scale(1.05) translateY(-0.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-    z-index: 20;
+    box-shadow: 0 2.5rem 4rem #747447;
+    z-index: 30;
     transition: all .2s;
     border-radius: 1rem; }
   .col-1-of-2 img:hover .col-1-of-2 img__photo:not(:hover) {
