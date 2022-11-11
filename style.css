@@ -190,7 +190,6 @@ body {
         color: transparent;
         position: relative;
         transition: .5s;
-        z-index: 1;
         margin: 15px 40px; }
         @media only screen and (min-width: 112.5em) {
           .header_info .menu_items .menu__item a {
@@ -509,180 +508,13 @@ video {
     padding: 35px 0;
     /*arriba lados*/ } }
 
-.todaslascategorias {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: darkslategray; }
-  .todaslascategoriastitulo {
-    width: 100%;
-    height: 100%;
-    padding-top: 50px; }
-  .todaslascategorias h2 {
-    width: 100%;
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    transform: rotate(-3deg) skewX(-3deg);
-    text-transform: uppercase; }
-
-.categorias {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: darkslategray;
-  display: flex;
-  flex-wrap: wrap;
-  /*wrap-reverse*/
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  max-width: 114rem;
-  margin: 0 auto; }
-  .categorias:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .categorias:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .categorias {
-      max-width: 50rem;
-      padding: 0 3rem; } }
-  .categorias:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .categorias .col-1-of-1 {
-    width: calc-col-width(1, 1); }
-  .categorias .col-1-of-2 {
-    width: calc-col-width(1, 2); }
-  .categorias .col-1-of-3 {
-    width: calc-col-width(1, 3); }
-  .categorias .col-1-of-4 {
-    width: calc-col-width(1, 4); }
-  .categorias .col-1-of-5 {
-    width: calc-col-width(1, 5); }
-  .categorias .col-1-of-6 {
-    width: calc-col-width(1, 6); }
-  .categorias .col-2-of-3 {
-    width: calc-col-width(2, 3); }
-  .categorias .col-2-of-4 {
-    width: calc-col-width(2, 4); }
-  .categorias .col-2-of-5 {
-    width: calc-col-width(2, 5); }
-  .categorias .col-2-of-6 {
-    width: calc-col-width(2, 6); }
-  .categorias .col-3-of-4 {
-    width: calc-col-width(3, 4); }
-  .categorias .col-3-of-5 {
-    width: calc-col-width(3, 5); }
-  .categorias .col-3-of-6 {
-    width: calc-col-width(3, 6); }
-  .categorias .col-4-of-5 {
-    width: calc-col-width(4, 5); }
-  .categorias .col-4-of-6 {
-    width: calc-col-width(4, 6); }
-  .categorias .col-5-of-6 {
-    width: calc-col-width(5, 6); }
-  .categorias [class^="col-"] {
-    float: left; }
-    .categorias [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .categorias [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .categorias [class^="col-"] {
-        width: 100% !important; } }
-
-.categoria {
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  height: 400px;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  /*no sobrepasa nada de dentro*/
-  position: relative;
-  /*para que no sobresalga el contenido overlay*/ }
-  .categoria:hover .categoria--overlay {
-    /*OVERLAY HACIA ARRIBA*/
-    height: 400px; }
-  .categoria--main_content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    display: block; }
-    .categoria--main_content img {
-      height: 100%; }
-  .categoria--overlay {
-    height: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    background-color: darkslategray;
-    opacity: 0.8;
-    overflow: hidden;
-    transition: .4s ease;
-    justify-content: center; }
-    .categoria--overlay h3 {
-      width: 100%;
-      color: white;
-      font-size: 30px;
-      text-align: center;
-      transform: rotate(-5deg) skewX(-5deg);
-      text-transform: uppercase;
-      margin-top: 10%; }
-    .categoria--overlay p {
-      width: 90%;
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      transform: rotate(-5deg) skewX(-5deg);
-      line-height: 30px;
-      margin: auto;
-      margin-top: 8%; }
-    .categoria--overlay a {
-      text-decoration: none; }
-      .categoria--overlay a button {
-        position: relative;
-        display: block;
-        height: 50px;
-        width: 190px;
-        border-radius: 10px;
-        text-transform: uppercase;
-        background-color: transparent;
-        color: white;
-        text-align: center;
-        font-size: 28px;
-        border: 2px solid;
-        transform: rotate(-5deg) skewX(-5deg);
-        cursor: pointer;
-        z-index: 0;
-        margin: auto;
-        margin-top: 8%;
-        text-decoration: none; }
-
 .container {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: yellow; }
+  background-color: gold; }
 
 .cat {
   width: 90%;
@@ -690,27 +522,97 @@ video {
   .cat .heading {
     text-align: center;
     font-size: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    transform: rotate(-5deg) skewX(-5deg);
+    text-transform: uppercase;
+    padding: 50px; }
     @media screen and (max-width: 650px) {
       .cat .heading {
         font-size: 25px; } }
-  .cat .row {
+  .cat .linea {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap; }
-    .cat .row .card {
+    .cat .linea .card:hover .card__body {
+      right: 0; }
+    .cat .linea .card {
       width: 20%;
-      background-color: skyblue;
       margin-bottom: 50px;
-      border: 1px solid blue;
-      height: 120px; }
-      @media screen and (max-width: 1200px) {
-        .cat .row .card {
-          width: 40%; } }
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      /*no se ve card__body*/
+      display: flex;
+      justify-content: center;
+      position: relative;
+      /*para que card__body este en su sitio*/ }
+      .cat .linea .card__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover; }
+      .cat .linea .card video {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover; }
+      .cat .linea .card__body {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        backdrop-filter: blur(3.5px);
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s; }
+        .cat .linea .card__body h3 {
+          transform: rotate(-5deg) skewX(-5deg);
+          font-size: 30px;
+          font-weight: 600;
+          margin-bottom: 15%;
+          margin-top: 15%;
+          text-transform: uppercase; }
+        .cat .linea .card__body p {
+          transform: rotate(-5deg) skewX(-5deg);
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 15%;
+          font-weight: 600; }
+        .cat .linea .card__body .btn {
+          position: relative;
+          display: block;
+          height: 50px;
+          width: 190px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          background-color: transparent;
+          text-align: center;
+          font-size: 14px;
+          border: 2px solid;
+          transform: rotate(-5deg) skewX(-5deg);
+          cursor: pointer;
+          margin: auto;
+          margin-top: 10px;
+          text-decoration: none;
+          font-weight: 600; }
+        .cat .linea .card__body .btn:hover {
+          background-color: black;
+          color: white;
+          mix-blend-mode: multiply;
+          /*letras tranparentes con video de fondo*/ }
       @media screen and (max-width: 900px) {
-        .cat .row .card {
-          width: 80%; } }
+        .cat .linea .card {
+          width: 40%; } }
+      @media screen and (max-width: 650px) {
+        .cat .linea .card {
+          width: 60%; } }
 
 .form {
   width: 100%;
