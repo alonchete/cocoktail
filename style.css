@@ -834,6 +834,9 @@ video {
     border-radius: 10px;
     overflow: hidden;
     backdrop-filter: blur(10px); }
+    @media (max-width: 1200px) {
+      .form-section .container_contact {
+        width: 90%; } }
     @media (max-width: 800px) {
       .form-section .container_contact {
         width: 90%;
