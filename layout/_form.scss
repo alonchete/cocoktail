@@ -1,103 +1,96 @@
-.form{
+.form-section{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
-    
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
     background-image: url("img/img11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
-   /*
-    margin: 0;
-    padding: 0;
-    background-image: url("img11.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;
-    box-sizing: border-box;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px;
-    display: flex;
-   */ 
-   
-.contact{
-    width: 80%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
-    position: relative;
-    
-    &__map{
-       width: 100%;
-       height: auto;
-       flex: 50%;
-       
-       iframe{
-        width: 100%;
-        height: 100%;
-        border-radius: 50px;
-       }
 
-    }
-    &__form{
+    .container_contact{
+        margin: auto;
+        max-width: 1110px;
         width: 100%;
-        height: auto;
-        flex: 50%;
-        text-align: center;
-        padding: 30px;
-        h3{
-            margin-bottom: 10px;
-            text-transform: uppercase;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @media (max-width: 800px){
+                width: 90%;
+                grid-template-columns:1fr;
+
         }
-        &--txt{
-            width: 100%;
-            height: 40px;
-            color:black;
-            border: 1px solid aquamarine;
-            border-radius: 50px;
-            outline: none;
-            margin-bottom: 20px;
-            padding: 15px;
+        
+       // gap: 1.5rem;
+       background-color: transparent;
+
+       box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+       border-radius: 10px;
+       overflow: hidden;
+       backdrop-filter: blur(10px);
+
+        &__form{
+            padding: 20px;
+
+            h3{
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                margin-bottom: 2rem;
+                text-align: center;
+                color:salmon;
+            }
+            .form{
+                display: grid;/*uno encima de otro*/
+                row-gap: 2rem;
+                input::placeholder{
+                    color:rgb(245, 169, 161);
+                }
+                input,textarea{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color:rgb(162, 78, 69);
+                    padding: 15px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    border-radius: 0.6rem;
+                }
+                textarea{
+                    resize: none;
+                    height:200px;
+                }
+                .sent-btn{
+                    border: none;
+                    outline: none;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    background-color: rgb(245, 169, 161);
+                    color:rgb(162, 78, 69);
+                    &:hover{
+                        
+                    }
+                }
+            }
+
         }
-        &--txtarea{
-            width: 100%;
-            height: 140px;
-            color:black;
-            border: 1px solid aquamarine;
-            border-radius: 50px;
-            outline: none;
-            margin-bottom: 20px;
-            padding: 15px;
-            resize: none;
+        &__map{
+            iframe{
+                width: 100%;
+                height: 100%;
+                @media (max-width: 800px){
+                    width: 100%;
+                    height: 400px; 
+                }           
+            }
         }
-        &--txt::placeholder{
-            color:aquamarine;
-        }
-        &--txtarea::placeholder{
-            color:aquamarine;
-        }
-        &--btn{
-            width: 100%;
-            border: none;
-            border-radius: 50px;
-            background-color: aquamarine;
-            padding: 15px 0;
-            font-size: 18px;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-     }
+    }
 }
-}
+

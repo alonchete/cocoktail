@@ -43,6 +43,14 @@
       padding: 45px 0;/*arriba lados*/
       mix-blend-mode: multiply;
       
+        
+    @media screen and (max-width: 800px){
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+          /*en responsive solo una columna*/
+          grid-gap: 30px;/*dirminuye margen de cada columna*/
+          padding: 35px 0;/*arriba lados*/
+    }
 
         .box{
           margin: auto;
@@ -137,18 +145,5 @@
   }
 
   
-  /*todos los derechos reservados*/
+
   
-  
-  
-  @media screen and (max-width: 800px){
-    .pie-pagina .grupo1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        /*en responsive solo una columna*/
-        grid-gap: 30px;/*dirminuye margen de cada columna*/
-        padding: 35px 0;/*arriba lados*/
-  
-    
-    }
-  }
