@@ -154,7 +154,7 @@ body {
   border-radius: 16px; }
 
 .flip-card-front {
-  background-color: aquamarine; }
+  background-image: linear-gradient(315deg, #2b717a, #095a31); }
 
 .flip-card-front img {
   width: 220px;
@@ -170,12 +170,15 @@ body {
   margin-top: 1rem; }
 
 .flip-card-back p {
-  margin-top: 10rem;
+  margin-top: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
   color: yellow;
   text-align: center;
-  text-size-adjust: 30%; }
+  font-size: 150%; }
+
+.flip-card-front h1 {
+  color: #fffb00; }
 
 .section-features {
   padding: 20rem 0;
