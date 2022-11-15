@@ -1,40 +1,61 @@
-.card {
-    
-    perspective: 150rem; // perspective works on child elements
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner{
     position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style:preserve-3d ;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
 
+.flip-card-front,.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
 
-    &__side {
-        
-        color:white;
-        font-size: 2rem;
-        height: 20rem;
-        transition: all 0.8s;
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        backface-visibility: hidden;
-        
+.flip-card-front{
+    background-color: aquamarine;
+}
 
-        &--front {
-            background-color: orangered;
-        }
+.flip-card-front img{
+    width: 220px;
+    margin-top: 1rem;
+}
 
-        &--back {
-            background-color: green;
-            transform: rotateY(180deg);
-        }
-      
-    }
+.flip-card-back{
+    background-image:
+    linear-gradient(
+        315deg, $color-primary-light, $color-primary-dark
+    );
+    color: black;
+    transform: rotateY(180deg);
+   
+}
 
-    &:hover &__side--front {
-        transform: rotateY(180deg);
-    }
-    &:hover &__side--back {
-        transform: rotateY(0);
-    }
+.flip-card-back img{
+    width: 140px;
+    margin-top: 1rem;
 
-
-
+}
+.flip-card-back p{
+    margin-top: 10rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    color: yellow;
+    text-align: center; 
+    text-size-adjust: 30%;   
 }
