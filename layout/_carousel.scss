@@ -1,0 +1,54 @@
+.carousel{
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 54px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 30px;
+    }
+    &-wrapper{
+        height: 600px;
+        width: 400px;
+        position: relative;
+        display: block;
+       margin: 50px auto;
+        border: 2px solid black;
+
+
+        &-item{
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           padding: 25px 50px;
+           opacity: 0;
+           transition: all 0.5s ease-in-out;
+
+           .arrow{
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 12px;
+           }
+           .arrow-prev{
+             left: 30px;
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%) rotate(135deg);
+           }
+           .arrow-next{
+            right: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+    }
+
+}
