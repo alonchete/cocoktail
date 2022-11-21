@@ -74,7 +74,7 @@
 
             display: inline-block;
             text-decoration: none;
-          background-image: linear-gradient(to left top, $color-gold1, $color-gold2);
+          background-image: linear-gradient(to left top, $colorFontMain, $color-white);
           -webkit-background-clip: text;
           color: transparent;
           position: relative;
@@ -89,7 +89,7 @@
   
     .menu__item--logo {
       color: transparent;
-      background-image: linear-gradient(to right, #79794d, #a5a210);
+      background-image: linear-gradient(to right, $colorFontMain, $colorFontMain);
       -webkit-background-clip: text;
       text-align: center;
       padding: 2rem 1.5rem;
@@ -101,7 +101,7 @@
     height: 40rem;
     width: 70rem;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to right, #747447, #7c7a12);
+    background-image: linear-gradient(to right, $colorFontMain, $colorFontMain);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   
   }

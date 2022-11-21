@@ -1,4 +1,5 @@
 .row {
+    @include clearfix;
     max-width: $grid-width; // different than width
     margin: 0 auto; // trick to center block element inside of another block elements. auto value results in a margin of the same size left and right 
     &:not(:last-child) {
@@ -38,9 +39,10 @@
 
 
 .col-1-of-2 h3{
-    background-image:$colorFuente;
+   // background-image:$colorFuente;
     -webkit-background-clip: text;
-    color: transparent;
+  //  color: transparent;
+    color: $colorFontMain;
     position: relative;
     align-items: center;
 

@@ -1,3 +1,7 @@
+
+.carta{
+    @include clearfix;
+}
 .contenedor{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -7,8 +11,8 @@
 }
 .flip-card{
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 350px;
     perspective: 1000px;
     margin-left: 10rem;
 
