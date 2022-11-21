@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     position: relative;
     @media (max-width: 800px){
-        height: 100vh;
+        height: 90vh;
     }
 
 
@@ -23,9 +23,10 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        height: 60%;
+        height: 50rem;
         @media (max-width: 1200px){
             width: 90%;
+            height: 55rem;
         }
         @media (max-width: 800px){
                 width: 80%;
@@ -46,7 +47,7 @@
             padding: 20px;
 
             h3{
-                font-size: 3rem;
+                font-size: 3.5rem;
                 text-transform: uppercase;
                 font-weight: 900;
                 margin-bottom: 2rem;
@@ -65,8 +66,8 @@
                     border: none;
                     outline: none;
                     background-color:rgb(162, 78, 69);
-                    padding: 15px;
-                    font-size: 1.5rem;
+                    padding: 2.5%;
+                    font-size: 1.3rem;
                     color: #fff;
                     border-radius: 0.6rem;
                 }
