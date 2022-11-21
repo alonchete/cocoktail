@@ -12,6 +12,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    @media (max-width: 800px){
+        height: 100vh;
+    }
 
 
     .container_contact{
@@ -20,12 +23,14 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        height: 60%;
         @media (max-width: 1200px){
             width: 90%;
         }
         @media (max-width: 800px){
-                width: 90%;
+                width: 80%;
                 grid-template-columns:1fr;
+                height: 80%;
 
         }
         
@@ -47,6 +52,7 @@
                 margin-bottom: 2rem;
                 text-align: center;
                 color:salmon;
+                margin-top: 2rem;
             }
             .form{
                 display: grid;/*uno encima de otro*/
@@ -88,7 +94,7 @@
                 height: 100%;
                 @media (max-width: 800px){
                     width: 100%;
-                    height: 400px; 
+                    height: 800px; 
                 }           
             }
         }
