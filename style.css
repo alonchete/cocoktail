@@ -292,10 +292,10 @@ body {
             font-size: 2.25rem; } }
         @media only screen and (max-width: 56.25em) {
           .header_info .menu_items .menu__item a {
-            font-size: 1.5rem; } }
+            font-size: 1.85rem; } }
         @media only screen and (max-width: 37.5em) {
           .header_info .menu_items .menu__item a {
-            font-size: 1.25rem; } }
+            font-size: 1.5rem; } }
   .header_info .menu__item--logo {
     color: transparent;
     background-image: linear-gradient(to right, #031625, #031625);
