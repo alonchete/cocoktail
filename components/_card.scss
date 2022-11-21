@@ -71,6 +71,12 @@
         backdrop-filter: blur(10px);
         filter: blur(4px);
     }
+    
+    .flip-card-back h1{
+        margin-top: 2rem;
+        font-size: 2rem;
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.774);
+    }
     .flip-card-back p{
         font-size: 1.6rem;
         color: black;
@@ -78,10 +84,5 @@
         top:50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-shadow: 0 0 1000px rgba(169, 216, 41, 0.774);
+        text-shadow: 0 0 4px rgba(255, 255, 255, 0.774);
     }
-    .flip-card-back h1{
-        margin-top: 1rem;
-        font-size: 2rem;
-    }
-    
