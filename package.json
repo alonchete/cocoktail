@@ -11,7 +11,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^8.0.0"
   },
   "repository": "https://github.com/alonchete/cocoktail.git"
 }

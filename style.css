@@ -88,6 +88,17 @@ body {
 .u-margin-huge {
   margin-top: 10rem !important; }
 
+.u-heading-text {
+  text-align: center !important;
+  font-size: 50px;
+  margin-bottom: 50px;
+  transform: rotate(-5deg) skewX(-5deg);
+  text-transform: uppercase;
+  padding: 50px; }
+  @media screen and (max-width: 650px) {
+    .u-heading-text {
+      font-size: 25px; } }
+
 .btn-text:link, .btn-text:visited {
   font-size: 2rem;
   color: #095a31;
