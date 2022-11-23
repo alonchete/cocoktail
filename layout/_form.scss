@@ -12,28 +12,36 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    @media (max-width: 800px){
-        height: 100vh;
+    
+    @include respond(tab-port) {//900px
+        height: 130vh;
     }
 
 
     .container_contact{
         margin: auto;
-        max-width: 1110px;
+        
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         height: 50rem;
-        @media (max-width: 1200px){
+        @include respond(phone) {//600px
             width: 90%;
-            height: 55rem;
+            grid-template-columns:1fr;
+            height: 90%;
         }
-        @media (max-width: 800px){
-                width: 80%;
-                grid-template-columns:1fr;
-                height: 90%;
-
+        @include respond(tab-port) {//900px
+            width: 75%;
+            grid-template-columns:1fr;
+            height: 90%;
         }
+        @include respond(tab-land) {//1200px
+            width: 90%;
+            
+        }
+        
+       
+        
         
        // gap: 1.5rem;
        background-color: transparent;
@@ -97,10 +105,20 @@
             iframe{
                 width: 100%;
                 height: 100%;
-                @media (max-width: 800px){
+                 
+                @include respond(phone) {//600px
                     width: 100%;
-                    height: 800px; 
-                }           
+                    height: 400px;
+                }
+                @include respond(tab-port) {//900px
+                    width: 100%;
+                    height: 600px;
+                }
+                @include respond(tab-land) {//1200px
+                    width: 100%;
+                    height: 800px;
+                    
+                }       
             }
         }
     }
