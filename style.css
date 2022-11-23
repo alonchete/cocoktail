@@ -151,6 +151,42 @@ body {
   align-items: center;
   margin-left: 2rem;
   margin-right: 2rem; }
+  @media screen and (max-width: 1000px) {
+    .contenedor {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      /*en responsive solo una columna*/
+      grid-gap: 30px;
+      /*dirminuye margen de cada columna*/
+      padding: 35px 0;
+      /*arriba lados*/ } }
+  @media only screen and (max-width: 75em) {
+    .contenedor {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      /*en responsive solo una columna*/
+      grid-gap: 30px;
+      /*dirminuye margen de cada columna*/
+      padding: 35px 0;
+      /*arriba lados*/ } }
+  @media only screen and (max-width: 56.25em) {
+    .contenedor {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      /*en responsive solo una columna*/
+      grid-gap: 20px;
+      /*dirminuye margen de cada columna*/
+      padding: 20px 0;
+      /*arriba lados*/ } }
+  @media only screen and (max-width: 37.5em) {
+    .contenedor {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      /*en responsive solo una columna*/
+      grid-gap: 20px;
+      /*dirminuye margen de cada columna*/
+      padding: 10px 0;
+      /*arriba lados*/ } }
 
 .flip-card {
   background-color: transparent;

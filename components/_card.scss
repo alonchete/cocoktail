@@ -8,6 +8,36 @@
     align-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
+
+    @media screen and (max-width: 1000px){
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        /*en responsive solo una columna*/
+        grid-gap: 30px;/*dirminuye margen de cada columna*/
+        padding: 35px 0;/*arriba lados*/
+  }
+  
+@include respond(tab-land) {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        /*en responsive solo una columna*/
+        grid-gap: 30px;/*dirminuye margen de cada columna*/
+        padding: 35px 0;/*arriba lados*/
+}
+@include respond(tab-port) {
+    width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        /*en responsive solo una columna*/
+        grid-gap: 20px;/*dirminuye margen de cada columna*/
+        padding: 20px 0;/*arriba lados*/
+}
+@include respond(phone) {
+    width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        /*en responsive solo una columna*/
+        grid-gap: 20px;/*dirminuye margen de cada columna*/
+        padding: 10px 0;/*arriba lados*/
+}
 }
 .flip-card{
     background-color: transparent;
