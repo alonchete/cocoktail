@@ -13,7 +13,7 @@
     .menu_items {
       width: 100%;
       height: 10rem;
-      font-size: 24px !important;
+      font-size: 4rem;
       text-align: center;
       font-weight: 600;
       box-sizing: border-box;
@@ -24,9 +24,27 @@
       background-image: linear-gradient(1turn, transparent, #0000007c, transparent);
       display: inline-block;
 
-  
-  
-  
+      @media screen and (max-width: 1200px){
+        font-size: 3rem;
+
+      }
+
+      @media screen and (max-width: 1000px){
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 700px){
+        font-size: 1.5rem;
+
+      }
+
+      @media screen and (max-width: 500px){
+        font-size: 1rem;
+        display: block;
+        
+      }
+    
+
   
       ul {
         overflow: hidden;
@@ -34,6 +52,8 @@
         /* relative to itself */
         height: 10rem;
         display: flex;
+       
+      
       }
   
       .menu__item {
@@ -42,36 +62,25 @@
         height: 5rem;
         margin: 1rem 6rem;
 
-        @include respond(big-desktop) {
-            margin: 1rem 6rem;
+        @media screen and (max-width: 1200){
+          margin: 1rem 1rem;
+   
+  
         }
-        @include respond(tab-land) {
-            margin: 1rem 5rem;
-        }
-        @include respond(tab-port) {
-            margin: 1rem 3rem;
-        }
-        @include respond(phone) {
-            margin: .5rem 1rem;
+        @media screen and (max-width: 900px){
+          margin: 1rem 2rem;
+   
+  
         }
 
+        @media screen and (max-width: 500px){
+          margin: 1rem 0rem;
+   
+  
+        }
             a {
-            padding: 1rem 1.5rem;
-
-            @include respond(big-desktop) {
-                font-size: 3rem;
-                }
-            @include respond(tab-land) {
-                font-size: 2.25rem;
-                }
-            @include respond(tab-port) {
-            font-size: 1.85rem;
-            }
-    
-            @include respond(phone) {
-            font-size: 1.5rem;
-            }
-
+         
+            padding: 1rem;
             display: inline-block;
             text-decoration: none;
           background-image: linear-gradient(to left top, $colorFontMain, $color-white);
@@ -81,6 +90,28 @@
           transition: .5s;
           z-index: 1;
           margin: 15px 40px;
+
+          @media screen and (max-width: 1200px){
+            padding: 1rem;
+     
+    
+          }
+          @media screen and (max-width: 900px){
+            padding: .5rem;
+     
+    
+          }
+          @media screen and (max-width: 500px){
+            padding: 0.2rem;
+
+    
+          }
+
+          @media screen and (max-width: 500px){
+            padding: 0.1rem;
+
+    
+          }
         
           
         }
@@ -104,6 +135,29 @@
     background-image: linear-gradient(to right, $colorFontMain, $colorFontMain);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   
+    @media screen and (max-width: 1200px){
+
+
+      height: 37rem;
+      width: 67rem;
+  }
+  @media screen and (min-width: 900px){
+    height: 40rem;
+    width: 70rem;
+  }
+
+  @media screen and (max-width: 500px){
+    height: 30rem;
+    width: 45rem;
+  }
+
+  @media screen and (max-width: 200px){
+    height: 15rem;
+    width: 30rem;
+}
+
+
+  
   }
   
   
@@ -121,13 +175,31 @@
   
       .heading-primary--main {
         display: block;
-        font-size: 6.5rem;
-        font-weight: 900;
         letter-spacing: 1rem;
         background-image: linear-gradient(0.50turn, #b4b4b4, #f1f1f1,  #b4b4b4  );
         -webkit-background-clip: text;
         color: transparent;
         margin-bottom: 1rem;
+        font-size: 6rem;
+
+        @media screen and (max-width: 1400px){
+          font-size: 5.5rem;
+        }
+
+
+        @media screen and (max-width: 1100px){
+          font-size: 5rem;
+        }
+
+        @media screen and (max-width: 900px){
+          font-size: 4.5rem;
+        }
+        @media screen and (max-width: 700px){
+          font-size: 3.5rem;
+        }
+
+
+  
       }
   
       .heading-primary--sub {
@@ -138,6 +210,22 @@
         background-image: linear-gradient(0.50turn, #f1f1f1, #c7c7c7,  #f1f1f1  );
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(big-desktop) {
+          font-size: 6rem;
+          }
+      @include respond(tab-land) {
+          font-size: 4rem;
+          }
+      @include respond(tab-port) {
+      font-size: 1.5rem;
+      }
+
+      @include respond(phone) {
+      font-size:1rem;
+      letter-spacing: .5rem;
+
+      }
       }
       
     }
