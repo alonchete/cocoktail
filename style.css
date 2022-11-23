@@ -58,7 +58,9 @@ html {
 body {
   box-sizing: border-box;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.438)), url("../img/pexels-henry--co-1939485.jpg");
+  background-attachment: fixed; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0;
