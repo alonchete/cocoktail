@@ -120,8 +120,8 @@
         position: relative;
 
         //hacer img borrosa
-        backdrop-filter: blur(10px);
-        filter: blur(4px);
+        //backdrop-filter: blur(10px);
+        filter: blur(2px);
     }
     
     .flip-card-back h1{
