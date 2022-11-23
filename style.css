@@ -151,8 +151,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin: auto; }
   @media screen and (max-width: 1000px) {
     .contenedor {
       width: 90%;
@@ -195,7 +194,7 @@ body {
   width: 275px;
   height: 350px;
   perspective: 1000px;
-  margin-left: 10rem; }
+  margin: auto; }
 
 .flip-card-inner {
   position: relative;
